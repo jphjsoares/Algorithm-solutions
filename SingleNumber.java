@@ -17,7 +17,7 @@ public class SingleNumber {
         Set<Integer> keys = ocurrences.keySet();
         int toReturn = 0;
         for(Integer key : keys){
-            if (ocurrences.get(key) > 1) toReturn = key; 
+            if (ocurrences.get(key) == 1) toReturn = key; 
         } 
         return toReturn;
     } 
